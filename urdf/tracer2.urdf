@@ -378,10 +378,10 @@
   <joint name="rslidar_joint" type="fixed">
     <parent link="base_link" />
     <child link="rslidar_link" />
-    <origin xyz="0.2125 0 0.19" rpy="0 0 0" />
+    <origin xyz="0.2125 0 0.20" rpy="0 0 0" />
   </joint>
   
-<!--
+
   <link name="imu_link">
     <visual>
       <geometry>
@@ -402,12 +402,11 @@
 
   
  <joint name="imu_joint" type="fixed">
-    <origin xyz="0 0 0" rpy="0 0 0" />
+    <origin xyz="0 0 0.15" rpy="0 0 0" />
     <parent link="base_link" />
     <child link="imu_link" />
 </joint> 
-  -->
-  
+ 
   
    <joint name="camera_joint" type="fixed">
     <parent link="base_link"/>
@@ -460,8 +459,8 @@
           <horizontal>
             <samples>720</samples>
             <resolution>1</resolution>
-            <min_angle>-3.141592</min_angle>
-            <max_angle>3.141592</max_angle>
+            <min_angle>-1.570796</min_angle>
+            <max_angle>1.570796</max_angle>
           </horizontal>
         </scan>
         <range>
@@ -511,7 +510,7 @@
         </sensor>
     </gazebo>
     
-    <!--
+   
     <gazebo reference="imu_link">
     <gravity>true</gravity>
     <sensor name="imu_sensor" type="imu">
@@ -531,5 +530,5 @@
       <pose>0 0 0 0 0 0</pose>
     </sensor>
   </gazebo>
-  -->
+  
 </robot>
