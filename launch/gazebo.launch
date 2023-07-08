@@ -1,5 +1,5 @@
 <launch>
-  <arg name="world_name" default="$(find tracer2)/worlds/plano1.world"/>
+  <arg name="world_name" default="$(find SocialTech-Gazebo)/worlds/plano1.world"/>
       <arg name="x" default="1.0"/>
     <arg name="y" default="1.0"/>
     <arg name="z" default="0.0"/>
@@ -28,13 +28,13 @@
               -y $(arg y)
               -z $(arg z)
               -Y $(arg yaw) 
-              -file $(find tracer2)/urdf/tracer2.urdf -urdf -model tracer2"
+              -file $(find SocialTech-Gazebo)/urdf/tracer2.urdf -urdf -model tracer2"
               
     output="screen" />
     
     <param
     name="robot_description"
-    textfile="$(find tracer2)/urdf/tracer2.urdf" />
+    textfile="$(find SocialTech-Gazebo)/urdf/tracer2.urdf" />
 
   <node
     name="robot_state_publisher"
@@ -46,7 +46,7 @@
     pkg="joint_state_publisher"
     type="joint_state_publisher" />
       
-        <node name="rviz" pkg="rviz" type="rviz" args="-d $(find tracer2)/rviz/model_display.rviz" />
+        <node name="rviz" pkg="rviz" type="rviz" args="-d $(find SocialTech-Gazebo)/rviz/model_display.rviz" />
     
   <node
     name="fake_joint_calibration"
