@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+   <link name="rslidar_link">
+    <visual>
+      <origin xyz="0.0 0.0 0.0" />
+      <geometry>
+        <cylinder length="0.07" radius="0.03" />
+      </geometry>
+      <material name="orange" />
+    </visual>
+  </link>
+
+  <joint name="rslidar_joint" type="fixed">
+    <parent link="base_link" />
+    <child link="rslidar_link" />
+    <origin xyz="0.2125 0 0.20" rpy="0 0 0" />
+  </joint>
+</robot>

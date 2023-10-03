@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot name="tracer2" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<!-- Import Rviz colors -->
+  <xacro:include filename="$(find SocialTech-Gazebo)/urdf/materials.xacro" />
+
+  <!-- Import lidar URDF -->
+  <xacro:include filename="$(find SocialTech-Gazebo)/urdf/lidar.xacro" />  
+
+    <!-- Import lidar IMU -->
+  <xacro:include filename="$(find SocialTech-Gazebo)/urdf/imu.xacro" />  
+
+    <!-- Import camera URDF -->
+  <xacro:include filename="$(find SocialTech-Gazebo)/urdf/camera.xacro" />  
+
+  <!-- Import Gazebo elements, including Gazebo colors -->
+  <xacro:include filename="$(find SocialTech-Gazebo)/urdf/tracer2.gazebo" />
+
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.00032354 4.0933E-17 0.092792"
+        rpy="0 0 0" />
+      <mass
+        value="42.875" />
+      <inertia
+        ixx="1.1428"
+        ixy="1.8678E-16"
+        ixz="0.0007936"
+        iyy="1.508"
+        iyz="-3.005E-17"
+        izz="2.5405" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SocialTech-Gazebo/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SocialTech-Gazebo/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="rueda_izquierda_Link">
+    <inertial>
+      <origin
+        xyz="-8.4752E-19 0 0.0375"
+        rpy="0 0 0" />
+      <mass
+        value="0.85779" />
+      <inertia
+        ixx="0.0011549"
+        ixy="3.2627E-51"
+        ixz="2.9387E-36"
+        iyy="0.0011549"
+        iyz="-1.3108E-36"
+        izz="0.0015842" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SocialTech-Gazebo/meshes/rueda_izquierda_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SocialTech-Gazebo/meshes/rueda_izquierda_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rueda_izquierda_joint"
+    type="continuous">
+    <origin
+      xyz="0 0.13 0.0625"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rueda_izquierda_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="rueda_derecha_Link">
+    <inertial>
+      <origin
+        xyz="-8.4752E-19 0 -0.0375"
+        rpy="0 0 0" />
+      <mass
+        value="0.85779" />
+      <inertia
+        ixx="0.0011549"
+        ixy="3.2627E-51"
+        ixz="2.9387E-36"
+        iyy="0.0011549"
+        iyz="-1.3108E-36"
+        izz="0.0015842" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SocialTech-Gazebo/meshes/rueda_derecha_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SocialTech-Gazebo/meshes/rueda_derecha_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rueda_derecha_joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.13 0.0625"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rueda_derecha_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="apoyo_izquierdo_delantero_Link">
+    <inertial>
+      <origin
+        xyz="0 -3.4694E-18 -0.025"
+        rpy="0 0 0" />
+      <mass
+        value="0.08509" />
+      <inertia
+        ixx="2.4033E-05"
+        ixy="1.1215E-52"
+        ixz="-6.7113E-38"
+        iyy="2.4033E-05"
+        iyz="-4.3749E-39"
+        izz="3.0772E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SocialTech-Gazebo/meshes/apoyo_izquierdo_delantero_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SocialTech-Gazebo/meshes/apoyo_izquierdo_delantero_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="apoyo_izquierdo_delantero_joint"
+    type="continuous">
+    <origin
+      xyz="0.21 0.1425 0.03"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="apoyo_izquierdo_delantero_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="apoyo_izquierdo_trasero_Link">
+    <inertial>
+      <origin
+        xyz="0 0 -0.025"
+        rpy="0 0 0" />
+      <mass
+        value="0.0850899388486764" />
+      <inertia
+        ixx="2.40333771513674E-05"
+        ixy="0"
+        ixz="4.24117892800525E-23"
+        iyy="2.40333771513674E-05"
+        iyz="1.56849225517708E-23"
+        izz="3.0772089396878E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SocialTech-Gazebo/meshes/apoyo_izquierdo_trasero_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SocialTech-Gazebo/meshes/apoyo_izquierdo_trasero_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="apoyo_izquierdo_trasero_joint"
+    type="continuous">
+    <origin
+      xyz="-0.21 0.1425 0.03"
+      rpy="1.5708 1.2815 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="apoyo_izquierdo_trasero_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="apoyo_derecho_delantero_Link">
+    <inertial>
+      <origin
+        xyz="2.77555756156289E-17 -3.46944695195361E-18 0.025"
+        rpy="0 0 0" />
+      <mass
+        value="0.0850899388486764" />
+      <inertia
+        ixx="2.40333771513674E-05"
+        ixy="1.12153670543725E-52"
+        ixz="-6.71126128087714E-38"
+        iyy="2.40333771513674E-05"
+        iyz="-4.37492629618135E-39"
+        izz="3.0772089396878E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SocialTech-Gazebo/meshes/apoyo_derecho_delantero_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SocialTech-Gazebo/meshes/apoyo_derecho_delantero_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="apoyo_derecho_delantero_joint"
+    type="continuous">
+    <origin
+      xyz="0.21 -0.1425 0.03"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="apoyo_derecho_delantero_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="apoyo_derecho_trasero_Link">
+    <inertial>
+      <origin
+        xyz="0 -6.9389E-18 0.025"
+        rpy="0 0 0" />
+      <mass
+        value="0.08509" />
+      <inertia
+        ixx="2.4033E-05"
+        ixy="0"
+        ixz="-1.0848E-22"
+        iyy="2.4033E-05"
+        iyz="3.2936E-24"
+        izz="3.0772E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SocialTech-Gazebo/meshes/apoyo_derecho_trasero_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SocialTech-Gazebo/meshes/apoyo_derecho_trasero_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="apoyo_derecho_trasero_joint"
+    type="continuous">
+    <origin
+      xyz="-0.21 -0.1425 0.03"
+      rpy="1.5708 -0.040768 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="apoyo_derecho_trasero_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+</robot>
