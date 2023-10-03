@@ -23,7 +23,7 @@
 
     <param
     name="robot_description"
-   command="$(find xacro)/xacro.py '$(find SocialTech-Gazebo)/urdf/tracer2.xacro'" />
+   command="$(find xacro)/xacro '$(find SocialTech-Gazebo)/urdf/tracer2.xacro'" />
     
   <node
     name="spawn_model"
