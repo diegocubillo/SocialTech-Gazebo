@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<robot name="obstaculo_fijo">
+
+ 	<link name="base_link">
+        <collision>
+        <origin xyz="0 0.0 0.6" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.4 0.4 1.1"/>
+            </geometry>
+			<material name="Cyan1">
+	       		<color rgba="0 0.9 0.9 1.0"/>
+	     	</material>
+    </collision>
+    <inertial>
+            <mass value="1.0"/>
+            <inertia ixx="0.015" iyy="0.0375" izz="0.0375" ixy="0" ixz="0" iyz="0"/>
+        </inertial>  
+		<visual>
+		    <origin xyz="0 0.0 0.6" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.4 0.4 1.2"/>
+			</geometry>
+			<material name="Cyan1">
+	       		<color rgba="0 0.9 0.9 1.0"/>
+	     	</material>
+		</visual>	
+	</link>
+
+	  <gazebo reference="base_link">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+</robot>
