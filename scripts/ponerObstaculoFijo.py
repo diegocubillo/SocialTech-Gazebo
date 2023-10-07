@@ -40,7 +40,7 @@ with open(ruta+'/config/puntosObstaculos.csv', newline='') as csvfile:
 
 listaCoordenadasObjetos = []
 for num in range(nObjetos):
-    aleatorio=random.randrange(maxObject-1)
+    aleatorio=random.randrange(maxObject)
     maxObject=maxObject-1
     punto=listaCoordenadas[aleatorio]
     listaCoordenadasObjetos.append(punto)

@@ -11,7 +11,7 @@ def main():
     incrementoAngulo=0.012566370614359172953850573533118
     rospy.init_node('set_pose')
     rospack = rospkg.RosPack()
-    rate = rospy.Rate(50)
+    rate = rospy.Rate(15)
     rospy.sleep(5)
     ruta=rospack.get_path('SocialTech-Gazebo')
     state_msg = ModelState()
