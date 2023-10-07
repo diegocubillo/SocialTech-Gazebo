@@ -62,4 +62,4 @@ Las coordenadas de la ruta que seguirá el objeto móvil se encuentran en el fic
 
 Siendo la ruta la que se puede ver en la siguiente imagen.
 
-![alt text](img/rutamovil.png)
+![alt text](img/rutamovil.gif)
