@@ -15,7 +15,7 @@ Una vez arrancado en otra terminal se puede ejecutar el nodo de teleoperación p
 
     rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 
-# Ejecutar escenario de la prueba 1
+# Ejecutar escenario de la prueba 2
 
 Para arrancar el entrono que se utilizará en la prueba 1 ejecuta el siguiente comando:
 
