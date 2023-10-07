@@ -5,8 +5,8 @@
     <arg name="z" default="0.0"/>
     <arg name="yaw" default="1.570796"/>
 
-    <arg name="xC" default="3.0"/>
-    <arg name="yC" default="4.0"/>
+    <arg name="xC" default="0.75"/>
+    <arg name="yC" default="6.0"/>
     <arg name="zC" default="0.0"/>
     <arg name="yawC" default="0"/>
     
@@ -42,12 +42,26 @@
               
     output="screen" />
 
+       <param
+    name="robot_description_obstaculo"
+    textfile="$(find SocialTech-Gazebo)/urdf/obstaculo_movil.urdf" />
+
+  <node
+    name="spawn_model_obstaculo"
+    pkg="gazebo_ros"
+    type="spawn_model"
+    args="-x $(arg xC)
+              -y $(arg yC)
+              -z $(arg zC)
+              -Y $(arg yawC) 
+              -param robot_description_obstaculo -urdf -model obstaculo_movil"
+              
+    output="screen" />    
 
   <node
     name="objeto_movil_publisher"
     pkg="SocialTech-Gazebo"
-    type="ponerObstaculoFijo.py" />
-
+    type="moverObstaculo.py" />
 
   <node
     name="robot_state_publisher"
