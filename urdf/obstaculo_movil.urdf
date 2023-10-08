@@ -27,6 +27,6 @@
 	</link>
 
 	  <gazebo reference="base_link">
-    <material>Gazebo/Blue</material>
+    <material>Gazebo/Green</material>
   </gazebo>
 </robot>
