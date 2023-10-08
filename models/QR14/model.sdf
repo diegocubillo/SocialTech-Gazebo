@@ -29,6 +29,13 @@
             <size>0.2 0.01 0.2</size>
           </box>
         </geometry>
+        <material>
+      <script>
+        <uri>model://QR14/materials/scripts/</uri>
+        <uri>model://QR14/materials/textures/</uri>
+        <name>QR14Texture</name>
+      </script>
+    </material>
       </visual>
     </link>
   </model>

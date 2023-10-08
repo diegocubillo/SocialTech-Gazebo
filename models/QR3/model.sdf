@@ -29,6 +29,13 @@
             <size>0.2 0.01 0.2</size>
           </box>
         </geometry>
+        <material>
+      <script>
+        <uri>model://QR3/materials/scripts/</uri>
+        <uri>model://QR3/materials/textures/</uri>
+        <name>QR3Texture</name>
+      </script>
+    </material>
       </visual>
     </link>
   </model>

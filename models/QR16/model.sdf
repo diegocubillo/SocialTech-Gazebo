@@ -29,6 +29,13 @@
             <size>0.2 0.01 0.2</size>
           </box>
         </geometry>
+        <material>
+      <script>
+        <uri>model://QR16/materials/scripts/</uri>
+        <uri>model://QR16/materials/textures/</uri>
+        <name>QR16Texture</name>
+      </script>
+    </material>
       </visual>
     </link>
   </model>
