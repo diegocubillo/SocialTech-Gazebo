@@ -29,6 +29,13 @@
             <size>0.841 0.01 1.189</size>
           </box>
         </geometry>
+        <material>
+      <script>
+        <uri>model://C5/materials/scripts/</uri>
+        <uri>model://C5/materials/textures/</uri>
+        <name>C5Texture</name>
+      </script>
+    </material>
       </visual>
     </link>
   </model>

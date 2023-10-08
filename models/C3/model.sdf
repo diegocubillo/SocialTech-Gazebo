@@ -29,6 +29,13 @@
             <size>0.841 0.01 1.189</size>
           </box>
         </geometry>
+         <material>
+      <script>
+        <uri>model://C3/materials/scripts/</uri>
+        <uri>model://C3/materials/textures/</uri>
+        <name>C3Texture</name>
+      </script>
+    </material>
       </visual>
     </link>
   </model>

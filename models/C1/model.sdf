@@ -29,7 +29,15 @@
             <size>1.682 0.01 1.189</size>
           </box>
         </geometry>
+         <material>
+      <script>
+        <uri>model://C1/materials/scripts/</uri>
+        <uri>model://C1/materials/textures/</uri>
+        <name>C1Texture</name>
+      </script>
+    </material>
       </visual>
+             
     </link>
   </model>
 </sdf>

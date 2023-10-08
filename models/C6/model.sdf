@@ -29,6 +29,13 @@
             <size>1.682 0.01 1.189</size>
           </box>
         </geometry>
+         <material>
+      <script>
+        <uri>model://C6/materials/scripts/</uri>
+        <uri>model://C6/materials/textures/</uri>
+        <name>C6Texture</name>
+      </script>
+    </material>
       </visual>
     </link>
   </model>

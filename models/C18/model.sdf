@@ -29,6 +29,13 @@
             <size>1.682 0.01 1.189</size>
           </box>
         </geometry>
+        <material>
+      <script>
+        <uri>model://C18/materials/scripts/</uri>
+        <uri>model://C18/materials/textures/</uri>
+        <name>C18Texture</name>
+      </script>
+    </material>
       </visual>
     </link>
   </model>

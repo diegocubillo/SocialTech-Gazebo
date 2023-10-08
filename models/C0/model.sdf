@@ -19,7 +19,7 @@
       <collision name="collision">
         <geometry>
           <box>
-            <size>1.682 0.01 1.189</size>
+            <size>2.378 0.01 1.682</size>
           </box>
         </geometry>
       </collision>
@@ -29,6 +29,13 @@
             <size>2.378 0.01 1.682</size>
           </box>
         </geometry>
+        <material>
+        <script>
+        <uri>model://C0/materials/scripts/</uri>
+        <uri>model://C0/materials/textures/</uri>
+        <name>C0Texture</name>
+      </script>
+      </material>
       </visual>
     </link>
   </model>

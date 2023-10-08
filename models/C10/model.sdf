@@ -29,6 +29,13 @@
             <size>0.841 0.01 1.189</size>
           </box>
         </geometry>
+        <material>
+      <script>
+        <uri>model://C10/materials/scripts/</uri>
+        <uri>model://C10/materials/textures/</uri>
+        <name>C10Texture</name>
+      </script>
+    </material>
       </visual>
     </link>
   </model>
