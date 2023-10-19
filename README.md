@@ -5,11 +5,26 @@ Los tres ficheros launch que contiene el paquete sirven para lanzar cada una de 
 - **prueba2.launch** --> Aranca gazebo con el el escenario que se utilizará en la final de la competición y coloca 3 obstaculos de forma aleatoria de entre las 10 posibles ubicaciones.
 - **prueba3.launch** --> Aranca gazebo con el el escenario que se utilizará en la final de la competición y hace que un obstaculo recorra el escenario siguiendo una ruta fija.
 
+Antes de ejecutar los escenarios recuerda hacer un source de ROS y del workspace en cada terminal que uses si es que no has introducido estos comandos en el bashrc.
+
+    source /opt/ros/noetic/setup.bash
+    source ~/SocialTech_ws/devel/setup.bash
+
+Para no estar ejecutando estos dos comandos constantemente puedes ejecutar una vez los siguientes comandos:
+
+    echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+    echo "source ~/SocialTech_ws/devel/setup.bash" >> ~/.bashrc
+
+
 # Ejecutar escenario de la prueba 1
 
 Para arrancar el entrono que se utilizará en la prueba 1 ejecuta el siguiente comando:
 
     roslaunch SocialTech-Gazebo prueba1.launch 
+
+Aparecerá una el simulador Gazebo tal y como aparece en la siguiente imagen.
+
+![alt text](img/prueba1.png)
 
 Una vez arrancado en otra terminal se puede ejecutar el nodo de teleoperación para comprobar que todo funciona bien. Este nodo permite mover el AGV por el escenario utilizando el teclado.
 
