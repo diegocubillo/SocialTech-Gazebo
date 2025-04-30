@@ -728,6 +728,29 @@
         <projection_type>perspective</projection_type>
       </camera>
     </gui>
+    <include>
+			<uri>model://chair</uri>
+			<static>true</static>
+			<pose>20 0 0 0 0 0</pose>
+		</include>
+    <include>
+			<uri>model://table1</uri>
+			<static>true</static>
+			<pose>20 5 0 0 0 0</pose>
+		</include>
+    <include>
+			<uri>model://table2</uri>
+			<static>true</static>
+			<pose>20 10 0 0 0 0</pose>
+		</include>
+    <include>
+      <uri>model://aula_501</uri>
+      <pose>0 20 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://door</uri>
+      <pose>0 20 0 0 0 -1.8</pose>
+    </include>
 		<include>
 			<uri>model://QR0</uri>
 			<static>true</static>
