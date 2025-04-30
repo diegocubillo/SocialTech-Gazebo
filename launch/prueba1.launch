@@ -1,7 +1,7 @@
 <launch>
-  <arg name="world_name" default="$(find SocialTech-Gazebo)/worlds/plano1.world"/>
-      <arg name="x" default="1.0"/>
-    <arg name="y" default="1.0"/>
+  <arg name="world_name" default="$(find SocialTech-Gazebo)/worlds/ICAI_A501.world"/>
+      <arg name="x" default="-1.0"/>
+    <arg name="y" default="2.0"/>
     <arg name="z" default="0.0"/>
     <arg name="yaw" default="1.570796"/>
     
