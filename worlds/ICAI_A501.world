@@ -1,23 +1,5 @@
 <sdf version='1.7'>
   <world name='ICAI_A501'>
-    <light name='sun' type='directional'>
-      <cast_shadows>1</cast_shadows>
-      <pose>0.48 6 10 0 0 0</pose>
-      <diffuse>0.8 0.8 0.8 1</diffuse>
-      <specular>0.2 0.2 0.2 1</specular>
-      <attenuation>
-        <range>1000</range>
-        <constant>0.9</constant>
-        <linear>0.01</linear>
-        <quadratic>0.001</quadratic>
-      </attenuation>
-      <direction>-0.5 0.1 -0.9</direction>
-      <spot>
-        <inner_angle>0</inner_angle>
-        <outer_angle>0</outer_angle>
-        <falloff>0</falloff>
-      </spot>
-    </light>
     <gravity>0 0 -9.8</gravity>
     <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
     <atmosphere type='adiabatic'/>
@@ -173,6 +155,363 @@
 			<static>true</static>
 			<pose>4.4 10.6 0 0 0 -1.5708</pose>
 		</include>
+
+
+    <!-- West side lights-->
+
+    <light type="point" name="light111">
+      <pose>-0.75 1.4 2.65 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <diffuse>0.6 0.6 0.6 1</diffuse>
+      <attenuation>
+        <range>20.0</range>
+        <constant>0.9</constant>
+        <linear>1.0</linear>
+        <quadratic>0.1</quadratic>
+      </attenuation>
+      <visualize>false</visualize>
+    </light>
+
+    <light type="point" name="light112">
+      <pose>-2.55 1.4 2.65 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <diffuse>0.6 0.6 0.6 1</diffuse>
+      <attenuation>
+        <range>20.0</range>
+        <constant>0.9</constant>
+        <linear>1.0</linear>
+        <quadratic>0.1</quadratic>
+      </attenuation>
+      <visualize>false</visualize>
+    </light>
+
+    <light type="point" name="light113">
+      <pose>-4.35 1.4 2.65 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <diffuse>0.6 0.6 0.6 1</diffuse>
+      <attenuation>
+        <range>20.0</range>
+        <constant>0.9</constant>
+        <linear>1.0</linear>
+        <quadratic>0.1</quadratic>
+      </attenuation>
+      <visualize>false</visualize>
+    </light>
+
+    <light type="point" name="light121">
+      <pose>-0.75 3.8 2.9 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <diffuse>0.6 0.6 0.6 1</diffuse>
+      <attenuation>
+        <range>20.0</range>
+        <constant>0.9</constant>
+        <linear>1.0</linear>
+        <quadratic>0.1</quadratic>
+      </attenuation>
+      <visualize>false</visualize>
+    </light>
+
+    <light type="point" name="light122">
+      <pose>-2.55 3.8 2.9 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <diffuse>0.6 0.6 0.6 1</diffuse>
+      <attenuation>
+        <range>20.0</range>
+        <constant>0.9</constant>
+        <linear>1.0</linear>
+        <quadratic>0.1</quadratic>
+      </attenuation>
+      <visualize>false</visualize>
+    </light>
+
+    <light type="point" name="light123">
+      <pose>-4.35 3.8 2.9 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <diffuse>0.6 0.6 0.6 1</diffuse>
+      <attenuation>
+        <range>20.0</range>
+        <constant>0.9</constant>
+        <linear>1.0</linear>
+        <quadratic>0.1</quadratic>
+      </attenuation>
+      <visualize>false</visualize>
+    </light>
+
+    <light type="point" name="light131">
+      <pose>-0.75 6.2 2.9 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <diffuse>0.6 0.6 0.6 1</diffuse>
+      <attenuation>
+        <range>20.0</range>
+        <constant>0.9</constant>
+        <linear>1.0</linear>
+        <quadratic>0.1</quadratic>
+      </attenuation>
+      <visualize>false</visualize>
+    </light>
+
+    <light type="point" name="light132">
+      <pose>-2.55 6.2 2.9 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <diffuse>0.6 0.6 0.6 1</diffuse>
+      <attenuation>
+        <range>20.0</range>
+        <constant>0.9</constant>
+        <linear>1.0</linear>
+        <quadratic>0.1</quadratic>
+      </attenuation>
+      <visualize>false</visualize>
+    </light>
+
+    <light type="point" name="light133">
+      <pose>-4.35 6.2 2.9 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <diffuse>0.6 0.6 0.6 1</diffuse>
+      <attenuation>
+        <range>20.0</range>
+        <constant>0.9</constant>
+        <linear>1.0</linear>
+        <quadratic>0.1</quadratic>
+      </attenuation>
+      <visualize>false</visualize>
+    </light>
+
+    <light type="point" name="light141">
+      <pose>-0.75 8.6 2.9 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <diffuse>0.6 0.6 0.6 1</diffuse>
+      <attenuation>
+        <range>20.0</range>
+        <constant>0.9</constant>
+        <linear>1.0</linear>
+        <quadratic>0.1</quadratic>
+      </attenuation>
+      <visualize>false</visualize>
+    </light>
+
+    <light type="point" name="light142">
+      <pose>-2.55 8.6 2.9 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <diffuse>0.6 0.6 0.6 1</diffuse>
+      <attenuation>
+        <range>20.0</range>
+        <constant>0.9</constant>
+        <linear>1.0</linear>
+        <quadratic>0.1</quadratic>
+      </attenuation>
+      <visualize>false</visualize>
+    </light>
+
+    <light type="point" name="light143">
+      <pose>-4.35 8.6 2.9 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <diffuse>0.6 0.6 0.6 1</diffuse>
+      <attenuation>
+        <range>20.0</range>
+        <constant>0.9</constant>
+        <linear>1.0</linear>
+        <quadratic>0.1</quadratic>
+      </attenuation>
+      <visualize>false</visualize>
+    </light>
+
+
+    <!-- East side lights -->
+
+    <light type="point" name="light211">
+      <pose>1.05 1.4 2.65 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <diffuse>0.6 0.6 0.6 1</diffuse>
+      <attenuation>
+        <range>20.0</range>
+        <constant>0.9</constant>
+        <linear>1.0</linear>
+        <quadratic>0.1</quadratic>
+      </attenuation>
+      <visualize>false</visualize>
+    </light>
+
+    <light type="point" name="light212">
+      <pose>2.85 1.4 2.65 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <diffuse>0.6 0.6 0.6 1</diffuse>
+      <attenuation>
+        <range>20.0</range>
+        <constant>0.9</constant>
+        <linear>1.0</linear>
+        <quadratic>0.1</quadratic>
+      </attenuation>
+      <visualize>false</visualize>
+    </light>
+
+    <light type="point" name="light213">
+      <pose>4.65 1.4 2.65 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <diffuse>0.6 0.6 0.6 1</diffuse>
+      <attenuation>
+        <range>20.0</range>
+        <constant>0.9</constant>
+        <linear>1.0</linear>
+        <quadratic>0.1</quadratic>
+      </attenuation>
+      <visualize>false</visualize>
+    </light>
+
+    <light type="point" name="light221">
+      <pose>1.05 3.8 2.9 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <diffuse>0.6 0.6 0.6 1</diffuse>
+      <attenuation>
+        <range>20.0</range>
+        <constant>0.9</constant>
+        <linear>1.0</linear>
+        <quadratic>0.1</quadratic>
+      </attenuation>
+      <visualize>false</visualize>
+    </light>
+
+    <light type="point" name="light222">
+      <pose>2.85 3.8 2.9 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <diffuse>0.6 0.6 0.6 1</diffuse>
+      <attenuation>
+        <range>20.0</range>
+        <constant>0.9</constant>
+        <linear>1.0</linear>
+        <quadratic>0.1</quadratic>
+      </attenuation>
+      <visualize>false</visualize>
+    </light>
+
+    <light type="point" name="light223">
+      <pose>4.65 3.8 2.9 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <diffuse>0.6 0.6 0.6 1</diffuse>
+      <attenuation>
+        <range>20.0</range>
+        <constant>0.9</constant>
+        <linear>1.0</linear>
+        <quadratic>0.1</quadratic>
+      </attenuation>
+      <visualize>false</visualize>
+    </light>
+
+    <light type="point" name="light231">
+      <pose>1.05 6.2 2.9 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <diffuse>0.6 0.6 0.6 1</diffuse>
+      <attenuation>
+        <range>20.0</range>
+        <constant>0.9</constant>
+        <linear>1.0</linear>
+        <quadratic>0.1</quadratic>
+      </attenuation>
+      <visualize>false</visualize>
+    </light>
+
+    <light type="point" name="light232">
+      <pose>2.85 6.2 2.9 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <diffuse>0.6 0.6 0.6 1</diffuse>
+      <attenuation>
+        <range>20.0</range>
+        <constant>0.9</constant>
+        <linear>1.0</linear>
+        <quadratic>0.1</quadratic>
+      </attenuation>
+      <visualize>false</visualize>
+    </light>
+
+    <light type="point" name="light233">
+      <pose>4.65 6.2 2.9 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <diffuse>0.6 0.6 0.6 1</diffuse>
+      <attenuation>
+        <range>20.0</range>
+        <constant>0.9</constant>
+        <linear>1.0</linear>
+        <quadratic>0.1</quadratic>
+      </attenuation>
+      <visualize>false</visualize>
+    </light>
+
+    <light type="point" name="light241">
+      <pose>1.05 8.6 2.9 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <diffuse>0.6 0.6 0.6 1</diffuse>
+      <attenuation>
+        <range>20.0</range>
+        <constant>0.9</constant>
+        <linear>1.0</linear>
+        <quadratic>0.1</quadratic>
+      </attenuation>
+      <visualize>false</visualize>
+    </light>
+
+    <light type="point" name="light242">
+      <pose>2.85 8.6 2.9 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <diffuse>0.6 0.6 0.6 1</diffuse>
+      <attenuation>
+        <range>20.0</range>
+        <constant>0.9</constant>
+        <linear>1.0</linear>
+        <quadratic>0.1</quadratic>
+      </attenuation>
+      <visualize>false</visualize>
+    </light>
+
+    <light type="point" name="light243">
+      <pose>4.65 8.6 2.9 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <diffuse>0.6 0.6 0.6 1</diffuse>
+      <attenuation>
+        <range>20.0</range>
+        <constant>0.9</constant>
+        <linear>1.0</linear>
+        <quadratic>0.1</quadratic>
+      </attenuation>
+      <visualize>false</visualize>
+    </light>
+
+    <light type="point" name="light251">
+      <pose>1.05 11 2.65 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <diffuse>0.6 0.6 0.6 1</diffuse>
+      <attenuation>
+        <range>20.0</range>
+        <constant>0.9</constant>
+        <linear>1.0</linear>
+        <quadratic>0.1</quadratic>
+      </attenuation>
+      <visualize>false</visualize>
+    </light>
+
+    <light type="point" name="light252">
+      <pose>2.85 11 2.65 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <diffuse>0.6 0.6 0.6 1</diffuse>
+      <attenuation>
+        <range>20.0</range>
+        <constant>0.9</constant>
+        <linear>1.0</linear>
+        <quadratic>0.1</quadratic>
+      </attenuation>
+      <visualize>false</visualize>
+    </light>
+
+    <light type="point" name="light253">
+      <pose>4.65 11 2.65 0 0 0</pose>
+      <cast_shadows>false</cast_shadows>
+      <diffuse>0.6 0.6 0.6 1</diffuse>
+      <attenuation>
+        <range>20.0</range>
+        <constant>0.9</constant>
+        <linear>1.0</linear>
+        <quadratic>0.1</quadratic>
+      </attenuation>
+      <visualize>false</visualize>
+    </light>
   </world>
  
 </sdf>
