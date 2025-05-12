@@ -5,7 +5,7 @@ El fichero launch que contiene el paquete sirve para lanzar la prueba.
 - **prueba1.launch.py** --> Arranca gazebo con el escenario que se utilizará en la final de la competición.
 
 
-Antes de ejecutar el escenario recuerda hacer un source de ROS2 y del workspace en cada terminal que uses si es que no has introducido estos comandos en el bashrc. También debes hacerlo de gazebo.
+Antes de ejecutar el escenario recuerda hacer un source de ROS2 y del workspace en cada terminal que uses si es que no has introducido estos comandos en el bashrc. También debes hacerlo de gazebo (por [esto](https://answers.ros.org/question/358847/)).
 
     source /opt/ros/humble/setup.bash
     source /usr/share/gazebo/setup.bash
