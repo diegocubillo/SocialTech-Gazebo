@@ -2,30 +2,32 @@
 Este paquete contiene los ficheros necesarios para simular las tres pruebas de la final del SocialTech-Challenge.
 TODO adaptar según las pruebas de la final.
 El fichero launch que contiene el paquete sirve para lanzar la prueba.
-- **prueba1.launch** --> Aranca gazebo con el escenario que se utilizará en la final de la competición.
+- **prueba1.launch.py** --> Arranca gazebo con el escenario que se utilizará en la final de la competición.
 
 
-Antes de ejecutar el escenario recuerda hacer un source de ROS y del workspace en cada terminal que uses si es que no has introducido estos comandos en el bashrc.
+Antes de ejecutar el escenario recuerda hacer un source de ROS2 y del workspace en cada terminal que uses si es que no has introducido estos comandos en el bashrc. También debes hacerlo de gazebo.
 
-    source /opt/ros/noetic/setup.bash
-    source ~/SocialTech_ws/devel/setup.bash
+    source /opt/ros/humble/setup.bash
+    source /usr/share/gazebo/setup.bash
+    source ~/SocialTech_ws/install/setup.bash
 
 Para no estar ejecutando estos dos comandos constantemente puedes ejecutar una vez los siguientes comandos:
 
-    echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
-    echo "source ~/SocialTech_ws/devel/setup.bash" >> ~/.bashrc
+    echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+    echo "source /usr/share/gazebo/setup.bash" >> ~/.bashrc
+    echo "source ~/SocialTech_ws/install/setup.bash" >> ~/.bashrc
 
 
 # Ejecutar escenario de la prueba 1
 
 Para arrancar el entrono que se utilizará en la prueba 1 ejecuta el siguiente comando:
 
-    roslaunch SocialTech-Gazebo prueba1.launch 
+    ros2 launch SocialTech-Gazebo prueba1.launch.py
 
 
 Una vez arrancado en otra terminal se puede ejecutar el nodo de teleoperación para comprobar que todo funciona bien. Este nodo permite mover el AGV por el escenario utilizando el teclado.
 
-    rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+    ros2 run teleop_twist_keyboard teleop_twist_keyboard
 
 
 # Cambiar la ubicación del lidar
