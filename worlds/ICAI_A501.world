@@ -39,31 +39,31 @@
       <name>checkpoint1</name>
 			<uri>model://checkpoint</uri>
 			<static>true</static>
-			<pose>-0.4 1 0 0 0 0</pose>
+			<pose>-0.4 1 0.01 0 0 0</pose>
 		</include>
     <include>
       <name>checkpoint2</name>
 			<uri>model://checkpoint</uri>
 			<static>true</static>
-			<pose>5.4 2.6 0 0 0 0</pose>
+			<pose>5.4 2.6 0.01 0 0 0</pose>
 		</include>
     <include>
       <name>checkpoint3</name>
 			<uri>model://checkpoint</uri>
 			<static>true</static>
-			<pose>-2 6.52 0 0 0 0</pose>
+			<pose>-2 6.52 0.01 0 0 0</pose>
 		</include>
     <include>
       <name>checkpoint4</name>
 			<uri>model://checkpoint</uri>
 			<static>true</static>
-			<pose>5.3 5.56 0 0 0 0</pose>
+			<pose>5.3 5.56 0.01 0 0 0</pose>
 		</include>
     <include>
       <name>checkpoint5</name>
 			<uri>model://checkpoint</uri>
 			<static>true</static>
-			<pose>3.54 11.7 0 0 0 0</pose>
+			<pose>3.54 11.7 0.01 0 0 0</pose>
 		</include>
     <include>
       <name>table11</name>
