@@ -36,6 +36,36 @@
       <pose>0 0 0 0 0 -1.8</pose>
     </include>
     <include>
+      <name>checkpoint1</name>
+			<uri>model://checkpoint</uri>
+			<static>true</static>
+			<pose>-0.4 1 0.01 0 0 0</pose>
+		</include>
+    <include>
+      <name>checkpoint2</name>
+			<uri>model://checkpoint</uri>
+			<static>true</static>
+			<pose>5.4 2.6 0.01 0 0 0</pose>
+		</include>
+    <include>
+      <name>checkpoint3</name>
+			<uri>model://checkpoint</uri>
+			<static>true</static>
+			<pose>-2 6.52 0.01 0 0 0</pose>
+		</include>
+    <include>
+      <name>checkpoint4</name>
+			<uri>model://checkpoint</uri>
+			<static>true</static>
+			<pose>5.3 5.56 0.01 0 0 0</pose>
+		</include>
+    <include>
+      <name>checkpoint5</name>
+			<uri>model://checkpoint</uri>
+			<static>true</static>
+			<pose>3.54 11.7 0.01 0 0 0</pose>
+		</include>
+    <include>
       <name>table11</name>
 			<uri>model://table1</uri>
 			<static>true</static>
@@ -113,12 +143,13 @@
 			<static>true</static>
 			<pose>3.5 5.85 0 0 0 1.5708</pose>
 		</include>
-    <include>
+    <!-- This is the office owner's chair -->
+    <!-- <include>
       <name>chair7</name>
 			<uri>model://chair</uri>
 			<static>true</static>
 			<pose>5.1 5.4 0 0 0 -1.5708</pose>
-		</include>
+		</include> -->
     <include>
       <name>chair8</name>
 			<uri>model://chair</uri>
